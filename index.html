@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <input type="text" id="busca" placeholder="Pesquisar por título">
+    </header>
+    <main>
+        <section id="tarefas">
+            <h2>Tarefas <button>Registrar tarefa</button></h2>
+            <h6>Nenhuma tarefa registrada!</h6>
+        </section>
+        <section id="overlay"></section>
+        <div class="modal">
+            <form>
+                <h3>Criar tarefa</h3>
+                <label for="titulo">Título</label>
+                <input type="text" id="titulo">
+                <label type="descricao" id="descricao">Descrição</label>
+                <textarea id="descricao"></textarea>
+                <button>Criar</button>
+            </form>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
