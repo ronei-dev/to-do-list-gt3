@@ -8,6 +8,9 @@
     outline: none;
     font-family: Arial, Helvetica, sans-serif;
 }
+body{
+    background-color: #EFEFEF;
+}
 
 /*barra de pesquisa e botão de cadastro*/
 header{
@@ -49,12 +52,39 @@ header input{
 #tarefas h2 button:hover{
     background-color: rgb(110, 34, 180);
 }
+#tarefas ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 16px;
+}
+#tarefas ul li{
+    width: calc(25% - 12px);
+    padding: 16px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px #00000015;
+}
+#tarefas ul li .actions{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 16px;
+    cursor: pointer;
+}
+#tarefas ul li .actions svg:hover{
+    fill: blueviolet;
+} 
+#tarefas ul li h5{
+    font-size: 16px;
+    margin-bottom: 16px;
+}
 #tarefas h6{
     text-align: center;
     font-size: 24px;
     color: #999;
 }
 
+/*seção overlay*/
 #overlay{
     background-color: #00000080;
     width: 100%;
@@ -71,6 +101,7 @@ header input{
     visibility: visible;
 }
 
+/*seção modal*/
 .modal{
     width: 400px;
     background-color: white;
