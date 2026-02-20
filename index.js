@@ -18,8 +18,8 @@ function buscarTarefas(){
 
 function inserirTarefa(listaDeTarefas){
     if(listaDeTarefas.length > 0){
+        lista.innerHTML = ""
         listaDeTarefas.map(tarefa => {
-            lista.innerHTML = ""
             lista.innerHTML += `
                 <li>
                     <h5>${tarefa.titulo}</h5>
